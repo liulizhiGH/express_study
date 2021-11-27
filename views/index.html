@@ -15,7 +15,13 @@
     </style>
   </head>
   <body>
-    <h1>hello123 !!!</h1>
+    <h1 id="txt">onload</h1>
     <img src="./screenshot.png" alt="屏幕截图" />
+    <script>
+      window.onload = () => {
+        const h1 = document.getElementById("txt");
+        h1.innerHTML = `HELLO ${Date.now()}`;
+      };
+    </script>
   </body>
 </html>
