@@ -11,7 +11,7 @@ app.use(express.static("./public"));
 
 app.get("/", (req, res) => {
   const data = fs.readFileSync("./views/index.html");
-  // console.log(data)
+  // console.log(data,"data")
   // res.send(`<h1>He1llo World!${new Date(Date.now()).toLocaleString()}</h1>`);
   res.type("html");
   res.send(data);
